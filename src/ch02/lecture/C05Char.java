@@ -3,6 +3,7 @@ package ch02.lecture;
 public class C05Char {
 	public static void main(String[] args) {
 		// char : 2bytes
+		// character
 		// 하나의 문자 표현용
 		// unicode 사용
 		
