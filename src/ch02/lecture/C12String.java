@@ -6,9 +6,9 @@ public class C12String {
 		String b = "vscode";
 		
 		int x = 0;
-		int y = 0;
-		int i = 0;
-		int j = 0;
+		int y = 4;
+		int i = 2;
+		int j = 6;
 		
 		String c = a.substring(x, y);
 		String d = b.substring(i, j);
