@@ -1,6 +1,12 @@
 package p99codingbat;
 
 public class WarmUp1 {
+	public int diff21(int n) {
+		int diff = 21 - n;
+
+		return (diff < 0) ? diff * -2 : diff;
+	}
+
 	public int sumDouble(int a, int b) {
 		int sum = a + b;
 
