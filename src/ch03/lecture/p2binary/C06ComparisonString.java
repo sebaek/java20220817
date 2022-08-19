@@ -9,6 +9,7 @@ public class C06ComparisonString {
 //		System.out.println(a < b); // x
 		
 		// String 끼리 같은 지 비교 연산 (==, !=)
+		// equals 메소드 쓰기!!!
 		String c = "java";
 		String d = "java";
 		String e = "ja";
