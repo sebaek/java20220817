@@ -1,6 +1,17 @@
 package p99codingbat;
 
 public class WarmUp1 {
+	public boolean makes10(int a, int b) {
+		int sum = a + b;
+
+		if (sum == 10) {
+			return true;
+		} else {
+			return (a == 10) || (b == 10);
+		}
+
+	}
+
 	public boolean parrotTrouble(boolean talking, int hour) {
 		return talking && (hour < 7 || hour > 20);
 	}
