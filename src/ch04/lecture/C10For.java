@@ -60,7 +60,14 @@ public class C10For {
 			System.out.println();
 		}
 		
-		
+		System.out.println("--------------------------");
+		int l = 0;
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j <= i; j++) {
+				System.out.print((l++) % 10);
+			}
+			System.out.println();
+		}
 	}
 }
 
