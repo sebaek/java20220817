@@ -63,6 +63,37 @@ public class Exercise06 {
 		  
 		 */
 		
+System.out.println("별표 찍기 print, println 로 분리");
+		
+		System.out.print("*");
+		System.out.print("*");
+		System.out.print("*");
+		System.out.print("*");
+		System.out.print("*");
+		System.out.println();
+		System.out.print("*");
+		System.out.print("*");
+		System.out.print("*");
+		System.out.print("*");
+		System.out.println();
+		System.out.print("*");
+		System.out.print("*");
+		System.out.print("*");
+		System.out.println();
+		System.out.print("*");
+		System.out.print("*");
+		System.out.println();
+		System.out.print("*");
+		System.out.println();
+		
+		System.out.println("for문 사용");
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < (5-i); j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
 		
 	}
 }
