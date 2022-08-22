@@ -51,6 +51,19 @@ public class Exercise06 {
 			System.out.println();
 		}
 		
+		System.out.println("중첩 for문 사용");
+		/*
+		  
+		 *****
+		 ****
+		 ***
+		 **
+		 * 
+		  
+		  
+		 */
+		
+		
 	}
 }
 
