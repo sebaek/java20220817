@@ -23,5 +23,11 @@ public class C05Switch {
 
 		System.out.println(6);
 
+//		System.out.println("long type 되나??");
+//		switch (3L) {
+//		case 3L:
+//			System.out.println("되니?");
+//		}
+
 	}
 }
