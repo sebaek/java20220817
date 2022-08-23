@@ -1,6 +1,15 @@
 package p99codingbat;
 
 public class WarmUp1 {
+	public boolean posNeg(int a, int b, boolean negative) {
+
+		if (negative) {
+			return a < 0 && b < 0;
+		} else {
+			return a * b < 0;
+		}
+	}
+
 	public boolean nearHundred(int n) {
 
 		return (n >= 90 && n <= 110) || (n >= 190 && n <= 210);
