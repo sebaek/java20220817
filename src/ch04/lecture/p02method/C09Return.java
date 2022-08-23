@@ -11,4 +11,21 @@ public class C09Return {
 		long c = sum(50, 200);
 		System.out.println(c); // 50~200 사이 정수의 합 출력
 	}
+	
+	public static long sum(int a, int b) {
+		long total = 0;
+		
+		for (int i = a; i <= b; i++) {
+			total += i;
+		}
+		
+		return total;
+	}
 }
+
+
+
+
+
+
+
