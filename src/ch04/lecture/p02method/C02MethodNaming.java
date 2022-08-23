@@ -1,6 +1,6 @@
 package ch04.lecture.p02method;
 
-public class C02Method {
+public class C02MethodNaming {
 	public static void main(String[] args) {
 
 	}
