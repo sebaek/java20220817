@@ -1,4 +1,4 @@
-package ch04.lecture;
+package ch04.lecture.p01control;
 
 import java.util.Scanner;
 

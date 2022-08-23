@@ -1,4 +1,4 @@
-package ch04.lecture;
+package ch04.lecture.p01control;
 
 public class C04Random {
 	public static void main(String[] args) {
