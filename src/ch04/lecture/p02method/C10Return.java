@@ -15,4 +15,19 @@ public class C10Return {
 		System.out.println(d); // 200
 		
 	}
+
+	private static int max(int i, int j) {
+
+		if (i > j) {
+			return i;
+		}
+		return j;
+		
+	}
+
 }
+
+
+
+
+
