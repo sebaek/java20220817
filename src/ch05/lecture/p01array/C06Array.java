@@ -21,6 +21,8 @@ public class C06Array {
 		printMiddleItem(arr3); // 100
 		printMiddleItem(new int[] {5, 6, 7, 8, 9}); // 7
 		printMiddleItem(new int[] {100, 200, 300, 400}); // 300
+		
+		
 	}
 	
 	private static void printMiddleItem(int[] crr) {
