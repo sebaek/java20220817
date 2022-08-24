@@ -1,6 +1,13 @@
 package p99codingbat;
 
 public class Array1 {
+	public boolean commonEnd(int[] a, int[] b) {
+		boolean sameFirst = a[0] == b[0];
+		boolean sameLast = a[a.length - 1] == b[b.length - 1];
+
+		return sameFirst || sameLast;
+	}
+
 	public int[] makePi() {
 		// int[] a = {3, 1, 4};
 
