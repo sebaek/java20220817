@@ -16,7 +16,19 @@ public class C05Length {
 		printLength(arr4); // 0
 		printLength(new int[] {9, 8, 7, 6, 5}); // 5
 	}
+	
+	public static void printLength(int[] arr) {
+		System.out.println(arr.length);
+	}
 }
+
+
+
+
+
+
+
+
 
 
 
