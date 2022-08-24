@@ -23,7 +23,29 @@ public class C07Array {
 		
 		
 	}
+	
+	public static int sumFirstLast(int[] a) {
+		int first = a[0];
+		int last = a[a.length - 1];
+		
+		int sum = first + last;
+		
+		return sum;
+		
+//		return a[0] + a[a.length - 1];
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
