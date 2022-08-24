@@ -15,5 +15,17 @@ public class C06Array {
 		printLastItem(arr2); // 50
 		printLastItem(arr3); // 101
 		printLastItem(new int[] {-1}); // -1
+		
+		printMiddleItem(arr1); // 8
+		printMiddleItem(arr2); // 50
+		printMiddleItem(arr3); // 100
+		printMiddleItem(new int[] {5, 6, 7, 8, 9}); // 7
+		printMiddleItem(new int[] {100, 200, 300, 400}); // 300
 	}
 }
+
+
+
+
+
+
