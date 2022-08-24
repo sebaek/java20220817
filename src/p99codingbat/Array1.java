@@ -1,6 +1,19 @@
 package p99codingbat;
 
 public class Array1 {
+	public int[] rotateLeft3(int[] nums) {
+		// int[] res = {nums[1], nums[2], nums[0]};
+
+		// return res;
+
+		int temp = nums[0];
+		nums[0] = nums[1];
+		nums[1] = nums[2];
+		nums[2] = temp;
+
+		return nums;
+	}
+
 	public int sum3(int[] nums) {
 		return nums[0] + nums[1] + nums[2];
 	}
