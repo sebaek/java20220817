@@ -15,8 +15,20 @@ public class C09Array {
 		System.out.println(b[0].length); //3
 		System.out.println(b[1].length); //3
 		
+		int[] c = new int[3];
+		int[][] d = new int[2][3];
 		
+		System.out.println(d.length); // 2
+		System.out.println(d[0].length); // 3
+		System.out.println(d[1].length); // 3
 		
+		int[][] e = new int[3][];
+		System.out.println(e.length); // 3
+//		System.out.println(e[0].length); // Exception
 		
 	}
 }
+
+
+
+
