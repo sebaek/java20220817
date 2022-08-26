@@ -5,7 +5,7 @@ public class C02Method {
 		MyClass2 o1 = new MyClass2("maverick");
 		MyClass2 o2 = new MyClass2("hangman");
 		
-		o1.printName(); // instance mehtod
+		o1.printName(); // instance method
 		o2.printName(); // instance method
 	}
 }
