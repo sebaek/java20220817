@@ -20,8 +20,8 @@ public class C01Class {
 
 // 클래스명 작성 관습 : UpperCamelCase
 
-// upperCamelCase 
-// Upper_Camel_Case
+// upperCamelCase  // xxx
+// Upper_Camel_Case  // xxx
 class MyObject {
 	
 }
