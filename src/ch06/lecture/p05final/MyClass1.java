@@ -14,7 +14,7 @@ public class MyClass1 {
 	final int a = 5;
 	final int b;
 	
-	MyClass1() {
+	public MyClass1() {
 		b = 9;
 	}
 	
