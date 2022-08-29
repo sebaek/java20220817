@@ -1,5 +1,5 @@
-package ch06.book.s0609;
+package ch06.book.s060705;
 
 public class CarExample {
-	
+
 }
