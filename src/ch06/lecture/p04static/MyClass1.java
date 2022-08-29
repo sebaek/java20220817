@@ -15,7 +15,23 @@ public class MyClass1 {
 	}
 	
 	// non static method
+	// (instance) method
 	void printName() {
 		System.out.println(name);
 	}
+	
+	// static method
+	// class method
+	static void printCompany() {
+		System.out.println(company);
+	}
 }
+
+
+
+
+
+
+
+
+

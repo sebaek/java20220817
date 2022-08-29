@@ -27,6 +27,9 @@ public class C01Static {
 		System.out.println(o1.company);
 		System.out.println(o2.company);
 		System.out.println(MyClass1.company);
+		
+		MyClass1.printCompany();
+		o1.printCompany(); // 
 	}
 }
 
