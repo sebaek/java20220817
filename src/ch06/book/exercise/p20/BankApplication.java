@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class BankApplication {
 	private static Account[] accountArray = new Account[100];
 	private static Scanner scanner = new Scanner(System.in);
-	private static int size = 0;
+//	private static int size = 0;
 	
 	
 	public static void main(String[] args) {
@@ -81,7 +81,7 @@ public class BankApplication {
 	private static Account findAccount(String accountNumber) {
 		Account result = null;
 		
-		for (int i = 0; i < size; i++) {
+		for (int i = 0; i < accountArray.length && accountArray[i] != null; i++) {
 			if (accountArray[i].getAno().equals(accountNumber)) {
 				result = accountArray[i];
 				break;
@@ -97,7 +97,7 @@ public class BankApplication {
 		System.out.println("계좌목록");
 		System.out.println("----------");
 		
-		for (int i = 0; i < size; i++) {
+		for (int i = 0; i < accountArray.length && accountArray[i] != null; i++) {
 			System.out.println(accountArray[i].getAno() 
 					+ "\t" + accountArray[i].getOwner()
 					+ "\t" + accountArray[i].getBalance());
@@ -120,8 +120,14 @@ public class BankApplication {
 		
 		// 계좌생성코드 작성
 		Account account = new Account(accountNumber, owner, balance);
-		accountArray[size] = account;
-		size++;
+//		accountArray[size] = account;
+//		size++;
+		for (int i = 0; i < accountArray.length; i++) {
+			if (accountArray[i] == null) {
+				accountArray[i] = account;
+				break;
+			}
+		}
 		
 		System.out.println("결과: 계좌가 생성되었습니다.");
 		
