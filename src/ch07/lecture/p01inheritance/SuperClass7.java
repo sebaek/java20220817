@@ -10,4 +10,8 @@ public class SuperClass7 {
 	public SuperClass7(int a) {
 		
 	}
+	
+	public SuperClass7(String b) {
+		
+	}
 }
