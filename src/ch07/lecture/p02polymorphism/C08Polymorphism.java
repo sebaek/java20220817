@@ -10,7 +10,7 @@ public class C08Polymorphism {
 		
 //		System.out.println(b.length());
 	
-		String c = (String) b;
+		String c = (String) b; // 강제형변환 (casting)
 		System.out.println(c.length());
 	}
 }
