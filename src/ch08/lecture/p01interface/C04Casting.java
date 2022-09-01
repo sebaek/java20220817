@@ -1,5 +1,7 @@
 package ch08.lecture.p01interface;
 
+import java.io.Serializable;
+
 public class C04Casting {
 	public static void main(String[] args) {
 		CharSequence o1 = "topgun";
@@ -10,7 +12,13 @@ public class C04Casting {
 		
 		byte[] bytes = o2.getBytes();
 		
+		Object o3 = (Object) o1;
+		Serializable o4 = (Serializable) o1;
+		Comparable<String> o5 = (Comparable<String>) o1;
+		
+//		StringBuilder o6 = (StringBuilder) o1;
 		
 		
+		System.out.println("프로그램 실행됨...");
 	}
 }
