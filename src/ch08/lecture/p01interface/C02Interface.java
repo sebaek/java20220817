@@ -20,6 +20,21 @@ public class C02Interface {
 		System.out.println(o1 instanceof Serializable); // true
 		System.out.println(o1 instanceof CharSequence); // true
 		System.out.println(o1 instanceof Comparable<?>); // true
+		
+		System.out.println(o2 instanceof Object); // true
+		System.out.println(o2 instanceof Serializable); // true
+		System.out.println(o2 instanceof CharSequence); // true
+		System.out.println(o2 instanceof Comparable<?>); // true
+		
+		System.out.println(o3 instanceof Object); // true
+		System.out.println(o3 instanceof Serializable); // true
+		System.out.println(o3 instanceof CharSequence); // true
+		System.out.println(o3 instanceof Comparable<?>); // true
+		
+		System.out.println(o4 instanceof Object); // true
+		System.out.println(o4 instanceof Serializable); // true
+		System.out.println(o4 instanceof CharSequence); // true
+		System.out.println(o4 instanceof Comparable<?>); // true
 	}
 }
 
