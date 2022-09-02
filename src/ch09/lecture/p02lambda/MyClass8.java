@@ -14,6 +14,13 @@ public class MyClass8 {
 		System.out.println(Arrays.toString(a1));
 		
 		// a1 : [0, 2, 4, 6, 8, 10, ...] index * 2;
-		
+		Arrays.setAll(a1, i -> i * 2);
+		System.out.println(Arrays.toString(a1));
 	}
 }
+
+
+
+
+
+
