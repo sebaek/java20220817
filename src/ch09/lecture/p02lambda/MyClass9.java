@@ -15,6 +15,17 @@ public class MyClass9 {
 		
 		setAll(a1, i -> i*2);
 		System.out.println(Arrays.toString(a1));
+		
+		// a1 : [10, 9, ... , 1]
+		setAll(a1, p -> a1.length - p);
+		System.out.println(Arrays.toString(a1));
+		
+		// a1 : [9, 8, 7, ~ , 0]
+		setAll(a1, p -> a1.length - p - 1);
+		System.out.println(Arrays.toString(a1));
+		
+		
+		
 	}
 	
 	public static void setAll(int[] arr, IntUnaryOperator gen) {

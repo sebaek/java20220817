@@ -13,6 +13,14 @@ public class MyClass7 {
 	}
 }
 
+@FunctionalInterface
 interface MyInterface7 {
 	int method(int i);
+//	int method3(int a);
 }
+
+
+
+
+
+
