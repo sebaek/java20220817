@@ -1,0 +1,13 @@
+package p99leetcode;
+
+public class Solution1920 {
+    public int[] buildArray(int[] nums) {
+        int[] res = new int[nums.length];
+        
+        for (int i = 0; i < nums.length; i++) {
+            res[i] = nums[nums[i]];
+        }
+        
+        return res;
+    }
+}
