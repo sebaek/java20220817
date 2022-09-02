@@ -1,4 +1,4 @@
-package ch08.lecture.p03defaultMethod;
+package ch08.lecture.p03others;
 
 public class MyClass12 implements MyInterface1 {
 	@Override
