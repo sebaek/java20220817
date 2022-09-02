@@ -10,6 +10,8 @@ public class Solution1470 {
             res[i * 2 + 1] = nums[i + n];
         }
         
+//        java.util.Arrays.setAll(res, i -> (i % 2 == 0) ? nums[i / 2] : nums[i / 2 + n]);
+        
         return res;
     }
 }
