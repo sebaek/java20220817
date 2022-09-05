@@ -4,7 +4,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class C06Throws {
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws Exception {
 		method1();
 	}
 
