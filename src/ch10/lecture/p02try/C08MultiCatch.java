@@ -21,6 +21,22 @@ public class C08MultiCatch {
 		} catch (ArrayIndexOutOfBoundsException | NumberFormatException e) {
 			System.out.println("exception 발생!!!");
 		}
+		
+		try {
+			int a = Integer.parseInt(arr[0]);
+			
+			System.out.println(a);
+		} catch (RuntimeException e) {
+			System.out.println("exception 발생!!!");
+		}
+		
+		try {
+			int a = Integer.parseInt(arr[0]);
+			
+			System.out.println(a);
+		} catch (Exception e) {
+			System.out.println("exception 발생!!!");
+		}
 	}
 }
 
