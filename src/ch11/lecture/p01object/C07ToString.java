@@ -7,6 +7,9 @@ public class C07ToString {
 		
 		System.out.println(a.toString());
 		System.out.println(b.toString());
+		
+		System.out.println(String.valueOf(b));
+		System.out.println(b);
 	}
 }
 
