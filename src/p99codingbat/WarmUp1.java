@@ -1,6 +1,18 @@
 package p99codingbat;
 
 public class WarmUp1 {
+	public String everyNth(String str, int n) {
+		String res = "";
+
+		for (int i = 0; i < str.length(); i += n) {
+			char c = str.charAt(i);
+			res += c;
+		}
+
+		return res;
+
+	}
+
 	public String backAround(String str) {
 		char lastChar = str.charAt(str.length() - 1);
 
