@@ -52,6 +52,11 @@ class Book extends Object {
 		}
 		return false;
 	}
+	
+	@Override
+	public int hashCode() {
+		return code * 31;
+	}
 }
 
 
