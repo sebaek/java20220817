@@ -1,6 +1,14 @@
 package p99codingbat;
 
 public class WarmUp1 {
+	public String backAround(String str) {
+		char lastChar = str.charAt(str.length() - 1);
+
+		String res = lastChar + str + lastChar;
+
+		return res;
+	}
+
 	public boolean posNeg(int a, int b, boolean negative) {
 
 		if (negative) {
