@@ -109,6 +109,67 @@ public class C01Regex {
 		System.out.println("dog".matches(p17));
 		System.out.println("dooog".matches(p17));
 		
+		// 기호
+		// . : 모든 글자
+		// \d : [0-9] (digit)
+		// \w : [a-zA-Z0-9_] (word character)
+		// \s : 공백(스페이스, 엔터, 탭) 
+		// ^ : 한 줄의 시작
+		// $ : 한 줄의 끝
+		
+		String p18 = ".";
+		System.out.println("a".matches(p18));
+		System.out.println(" ".matches(p18));
+		System.out.println("0".matches(p18));
+		System.out.println("".matches(p18));
+		System.out.println("aa".matches(p18));
+		System.out.println("aa".matches(".{2}"));
+		
+		String p19 = "\\d"; // java에서 \는 \\로 작성
+		System.out.println("0".matches(p19));
+		System.out.println("5".matches(p19));
+		System.out.println("a".matches(p19));
+		System.out.println("".matches(p19));
+		System.out.println("91".matches(p19));
+		
+		String p20 = "\\d{8}";
+		System.out.println("19550101".matches(p20));
+		System.out.println("550101".matches(p20));
+		
+		String p21 = "\\d{4}-?\\d{2}-?\\d{2}";
+		System.out.println("19550101".matches(p21));
+		System.out.println("1955-01-01".matches(p21));
+		System.out.println("195501-01".matches(p21));
+		
+		// () : 그룹
+		// | : or 또는
+		
+		String p22 = "(dog|cat)";
+		System.out.println("dog".matches(p22));
+		System.out.println("cat".matches(p22));
+		
+		String p23 = "(\\d{4}|\\d{2})-?\\d{2}-?\\d{2}";
+		System.out.println("19550101".matches(p23));
+		System.out.println("550101".matches(p23));
+		System.out.println("9550101".matches(p23));
+		System.out.println("1955-01-01".matches(p23));
+		System.out.println("55-01-01".matches(p23));
+		
+		String p24 = "(dog)+";
+		System.out.println("dog".matches(p24));
+		System.out.println("dogdog".matches(p24));
+		System.out.println("dogdo".matches(p24));
+		
+		// \. : . (dot)
+		
+		String p25 = "\\.";
+		System.out.println("a".matches(p25)); // false
+		System.out.println(".".matches(p25)); // true
+		
+		String p26 = "www\\.[a-z]+\\.com";
+		System.out.println("www.daum.com".matches(p26));
+		System.out.println("daum.com".matches(p26));
+		System.out.println("www.daumcom".matches(p26));
 	}
 }
 
