@@ -1,6 +1,20 @@
 package p99codingbat;
 
 public class WarmUp1 {
+	public boolean stringE(String str) {
+		return str.matches("[^e]*e[^e]*e?[^e]*e?[^e]*");
+
+		// int cnt = 0;
+
+		// for (int i = 0; i < str.length(); i++) {
+		// if (str.charAt(i) == 'e') {
+		// cnt++;
+		// }
+		// }
+
+		// return cnt >= 1 && cnt <= 3;
+	}
+
 	public boolean mixStart(String str) {
 		if (str.length() >= 3) {
 			String sub = str.substring(1, 3);
