@@ -1,6 +1,18 @@
 package p99codingbat;
 
 public class WarmUp1 {
+	public boolean mixStart(String str) {
+		if (str.length() >= 3) {
+			String sub = str.substring(1, 3);
+
+			return sub.equals("ix");
+		}
+
+		return false;
+
+		// return str.matches(".ix.*");
+	}
+
 	public String everyNth(String str, int n) {
 		String res = "";
 
