@@ -9,5 +9,6 @@ public class UtilExample {
 		ChildPair<String, Integer> childPair = new ChildPair<>("홍삼원", 20);
 		Integer childAge = Util.getValue(childPair, "홍삼순");
 		System.out.println(childAge);
+		
 	}
 }
