@@ -16,7 +16,7 @@ public class C08GuideLine {
 	}
 	
 	public static void method1(ArrayList<? extends Number> list) {
-		Number n1 = list.get(0); // get, int, product
+		Number n1 = list.get(0); // get, in, product
 //		list.add(3); //put
 	}
 	
