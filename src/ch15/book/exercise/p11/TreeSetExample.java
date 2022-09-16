@@ -4,7 +4,7 @@ import java.util.TreeSet;
 
 public class TreeSetExample {
 	public static void main(String[] args) {
-		TreeSet<Student> treeSet = new TreeSet<>();
+		TreeSet<Student> treeSet = new TreeSet<>((s1, s2) -> s1.score - s2.score);
 		treeSet.add(new Student("blue", 96));
 		treeSet.add(new Student("hong", 86));
 		treeSet.add(new Student("white", 92));
