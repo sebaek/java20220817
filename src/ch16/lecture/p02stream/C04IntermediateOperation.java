@@ -32,11 +32,13 @@ public class C04IntermediateOperation {
 		
 		// filter :
 		Integer r4 = Stream.of(3, 4, 5, 6, 7)
-				.filter((e) -> e % 2 == 0) // 홀수만
+				.filter((e) -> e % 2 != 0) // 홀수만
 				.reduce((x, y) -> x + y)
 				.get();
 		
 		System.out.println(r4); // 15
+		
+		
 	}
 }
 
