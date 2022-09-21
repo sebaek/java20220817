@@ -12,7 +12,7 @@ public class C04Exception {
 		// java 9부터 가능
 
 		final Scanner scanner = new Scanner("");
-		PrintWriter pw = new PrintWriter(System.out);
+		PrintWriter pw = new PrintWriter(System.out); // final 키워드 생략 가능
 		
 		try (scanner; pw;) {
 			// 일 함...
