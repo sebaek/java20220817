@@ -7,7 +7,7 @@ import java.io.OutputStream;
 
 public class C03Exception {
 	public static void main(String[] args) {
-		// try - with - resources (java 8부터 가능)
+		// try - with - resources (java 7부터 가능)
 		// try - with - resources 에서 사용 가능한 type은
 		// AutoCloseable만 가능
 		
@@ -16,6 +16,9 @@ public class C03Exception {
 			OutputStream os = new FileOutputStream("");
 			InputStream is = new FileInputStream("");
 				) {
+			// 다시 할당할 수 없음
+//			os = new FileOutputStream("");
+			
 			// 읽고 쓰는 작업
 			os.write(3);
 			is.read();
