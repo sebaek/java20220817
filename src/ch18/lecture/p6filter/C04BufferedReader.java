@@ -11,8 +11,10 @@ public class C04BufferedReader {
 		
 		String line = null;
 		
+		int num = 1;
 		while ((line = br.readLine()) != null) {
-			System.out.println(line);
+			System.out.println(num + ":" + line);
+			num++;
 		}
 		
 		br.close();
