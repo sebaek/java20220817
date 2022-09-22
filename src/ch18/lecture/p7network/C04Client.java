@@ -11,7 +11,7 @@ public class C04Client {
 	public static void main(String[] args) {
 		System.out.println("연결 시도");
 		
-		try (Socket socket = new Socket("172.30.1.60", 60000);) {
+		try (Socket socket = new Socket("172.30.1.60", 30000);) {
 			
 			System.out.println("연결됨!");
 			

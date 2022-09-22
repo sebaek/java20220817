@@ -9,7 +9,7 @@ import java.net.Socket;
 public class C03Server {
 	public static void main(String[] args) {
 		System.out.println("연결 시도 중...");
-		try (ServerSocket serverSocket = new ServerSocket(60000);) {
+		try (ServerSocket serverSocket = new ServerSocket(30000);) {
 			int cnt = 0;
 			while (cnt < 500) {
 				cnt++;
