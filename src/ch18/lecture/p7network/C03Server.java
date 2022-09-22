@@ -11,7 +11,7 @@ public class C03Server {
 		System.out.println("연결 시도 중...");
 		try (ServerSocket serverSocket = new ServerSocket(60000);) {
 			int cnt = 0;
-			while (cnt < 50) {
+			while (cnt < 500) {
 				cnt++;
 				Socket socket = serverSocket.accept();
 				System.out.println("연결 완료");

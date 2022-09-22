@@ -5,6 +5,7 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.util.Scanner;
 
 public class C04Client {
 	public static void main(String[] args) {
@@ -19,11 +20,22 @@ public class C04Client {
 			BufferedWriter bw = new BufferedWriter(osw);
 			PrintWriter pw = new PrintWriter(bw);
 			
-			try (os;osw;bw;pw;) {
-				pw.println("클라이언트입니다.");
-				pw.println("접속에 성공했네요~");
+			Scanner scanner = new Scanner(System.in);
+			
+			try (os;osw;bw;pw;scanner;) {
+//				pw.println("클라이언트입니다.");
+//				pw.println("접속에 성공했네요~");
 				
-				pw.flush();
+				String data = "";
+				
+				while (!data.equals("bye")) {
+					System.out.print("입력>");
+					data = scanner.nextLine();
+					
+					pw.println(data);
+					pw.flush();
+				}
+				
 			}
 			
 		} catch (Exception e) {
