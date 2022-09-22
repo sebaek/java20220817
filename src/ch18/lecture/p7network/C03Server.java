@@ -22,9 +22,9 @@ public class C03Server {
 			try (is;isr;br;) {
 				
 				String line = "";
-				
+				String from = socket.getRemoteSocketAddress().toString();
 				while ((line = br.readLine()) != null) {
-					System.out.println("받은메세지:" + line);
+					System.out.println(from + "에서 받은메세지:" + line);
 				}
 			}
 			
